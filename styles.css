@@ -181,6 +181,66 @@ html{
 
 /* se termina parte de services */
 
+.testimonials{
+    background-color: #fffbf8;
+    
+}
+
+.testimonials__title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 2.3rem;
+    font-family: var(--names-and-titles);
+    letter-spacing: 0.5rem;
+    color: var(--dark-grayish-blue);
+}
+
+.testimonials__container{
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.testimonial__image{
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.testimonial__opinion{
+    font-size: 2.4rem;
+    font-family: var(--text);
+    line-height: 4rem;
+    color: var(--very-dark-grayish-blue);
+    margin: 40px 0;
+}
+
+.testimonial__name{
+    font-size: 2.5rem;
+    font-family: var(--names-and-titles);
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 15px;
+}
+
+.testimonial__job{
+    font-size: 1.8rem;
+    font-family: var(--text);
+    color: var(--grayish-blue);
+}
+
 
 
 
