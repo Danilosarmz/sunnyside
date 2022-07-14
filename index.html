@@ -4,32 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <div class="container">
 
-  We are creatives
+    <div class="hero">
+      <div class="hero__nav">
+        <img src="./images/logo.svg" alt="Logo Sunnyside" class="hero__logo">
+        <img src="./images/icon-hamburger.svg" alt="menú" class="hero__menu">
+      </div>
+      <div class="hero__text">
+        <span class="hero__phrase">We are creatives</span>
+        <img class="hero__arrow" src="./images/icon-arrow-down.svg" alt="flecha hacia abajo que señala frase">
+      </div>
+    </div>
 
-  Transform your brand
+    <div class="benefits__container">
+      <div class="benefit">
+        <div class="benefit__image benefit__image--transform"></div>
+        <article class="benefit__description">
+          <h1 class="benefit__title">Transform your brand</h1>
+          <p class="benefit__text">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#" class="benefit__cto">Learn more</a>
+      </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+      <div class="benefit">
+        <div class="benefit__image benefit__image--stand"></div>
+        <article class="benefit__description">
+          <h1 class="benefit__title">Stand out to the right audience</h1>
+          <p class="benefit__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+          <a href="#" class="benefit__cto">Learn more</a>
+      </div>
+    </div>
 
-  Learn more
+  </div>
 
-  Stand out to the right audience
 
   Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
 
