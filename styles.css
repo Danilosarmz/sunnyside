@@ -275,4 +275,44 @@ html{
 
 /* se termina sección decorativa */ 
 
+/* footer */
 
+footer{
+    height: 475px;
+    background-color: #90d4c5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__logo{
+    width: 250px;
+    margin-block-end: 60px;
+    margin-block-start: 70px;
+}
+
+.footer__menu-item{
+    text-decoration: none;
+    list-style: none;
+    font-size: 2.1rem;
+    font-family: var(--text);
+    color: var(--dark-desaturated-cyan);
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline-end: 80px;
+    margin-inline-start: 80px;
+}
+
+.social__logo{
+    width: 25px;
+}
