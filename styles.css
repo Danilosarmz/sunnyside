@@ -6,6 +6,7 @@
 
 html{
     font-size: 62.5%;
+    background-color: #fffbf8;
 }
 
 :root{
@@ -32,14 +33,15 @@ html{
 
 .container{
     margin: 0 auto;
-    max-width: 475px;
+    max-width: 1400px;
 }
 
 .hero{
     background-image: url(./images/mobile/image-header.jpg);
     height: 600px;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -67,7 +69,6 @@ html{
     color: var(--white);
     font-family: var(--names-and-titles);
     line-height: 6rem;
-    margin-bottom: 20px;
     letter-spacing: 1.3rem;
 }
 
@@ -79,20 +80,22 @@ html{
 
 /* terminamos parte del hero */
 
-.benefit{
+.benefits__container{
     display: grid;
-    height: 900px;
+    height: 1800px;
     grid-template-columns: 1fr;
-    grid-template-rows: 45% 55%;
+    grid-template-rows: 405px 495px 405px 495px;
 }
 
 .benefit__description{
     background-color: var(--white);
-    padding: 10px 40px;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .benefit__title{
@@ -124,13 +127,13 @@ html{
 
 .benefit__image--transform{
     background-image: url(./images/mobile/image-transform.jpg);
-    background-position: fixed;
+    background-position: center;
     background-size: cover;
 }
 
 .benefit__image--stand{
     background-image: url(./images/mobile/image-stand-out.jpg);
-    background-position: fixed;
+    background-position: center;
     background-size: cover;
 }
 
@@ -147,6 +150,12 @@ html{
     flex-direction: column;
     justify-content: flex-end;
     padding: 15px;
+}
+
+.service__description{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .service__title{
@@ -246,7 +255,7 @@ html{
 
 .decoratives{
     display: grid;
-    width: 475px;
+    width: 100%;
     height: 475px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -290,6 +299,8 @@ footer{
 .footer__menu{
     display: flex;
     justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer__logo{
@@ -315,4 +326,130 @@ footer{
 
 .social__logo{
     width: 25px;
+}
+
+/* versión tablet */
+
+@media (min-width: 700px){
+    .hero{
+    background-image: url(./images/desktop/image-header.jpg);
+    }
+    .hero__text{
+    margin-bottom: 220px;
+    }
+    .benefits__container{
+    display: grid;
+    height: 1200px;
+    /* grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%; */
+    grid-template: 
+    "trans egg" 50%
+    "cup stand" 50% /
+    50% 50%;
+    }
+    .benefit__description{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .benefit__image--transform{
+        grid-area: egg;
+    }
+    .benefit__image--stand{
+        grid-area: cup;
+    }
+    .benefit__description--transform{
+        grid-area: trans;
+    }
+    .benefit__description--stand{
+        grid-area: stand;
+    }
+    .benefit__title{
+    font-size: 3.4rem;
+    }
+    .benefit__text{
+    font-size: 1.6rem;
+    }
+    .benefit__cto{
+    font-size: 1.6rem;
+    }
+    .services__container{
+    display: grid;
+    height: 600px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    }
+    .service{
+    padding-top: 50px;
+    }
+    .service--graphic{
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    }
+    .service--photography{
+    background-image: url(./images/desktop/image-photography.jpg);
+    }
+    .service__description{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    }
+    .service__title{
+    padding-top: 30px;
+    font-size: 3.1rem;
+    }
+    .service__text{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    }
+    .testimonials{
+    height: 500px;
+    }
+    .testimonials__container{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    .testimonial__image{
+    width: 80px;
+    }
+    .testimonial__opinion{
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    }
+    .testimonial__name{
+    font-size: 1.5rem;
+    }
+    .testimonial__job{
+    font-size: 1rem;
+    }
+    .testimonials__title{
+    margin-top: 100px;
+    }
+    .decoratives{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px;
+    height: auto;
+    }
+    .social{
+    width: 500px;
+    margin: 0 auto;
+    }
+}
+
+@media (min-width: 1300px){
+    .service__description{
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    }
+    .social{
+    width: 800px;
+    margin: 0 auto;
+    }
 }
